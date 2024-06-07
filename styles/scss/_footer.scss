@@ -1,0 +1,30 @@
+footer {
+    background-color: azure;
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contacto {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      line-height: 15px;
+  }
+  
+  
+  .socialMedia {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;    
+  }
+  
+  .links{
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .insta{
+      color: darkred;
+  }

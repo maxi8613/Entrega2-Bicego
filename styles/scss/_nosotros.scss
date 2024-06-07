@@ -1,0 +1,14 @@
+.cartas{
+    min-height: calc(100vh - 100px - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+  .imgMama {
+      height: 250px;
+    }
+    
+    .imgPapa {
+      height: 250px;
+    } 

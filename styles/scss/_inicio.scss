@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60% 40 1fr;
+    grid-template-areas: "fotos fotos"
+    "presentacion presentacion"
+    "presentacion presentacion";
+  }
+  
+  .fotos{
+  grid-area: fotos;
+  } 
+  
+  
+  .carousel-item img {
+    max-height: 800px;
+    width: 200px;
+  }
+  
+  .contenedorP{
+    grid-area: presentacion;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .presentacion {
+    line-height: 30px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+  }
+  .presentacion h2{
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .presentacion p {
+    font-size: 20px;
+  }

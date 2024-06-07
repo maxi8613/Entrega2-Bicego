@@ -1,0 +1,27 @@
+{
+  "name": "preentrega3",
+  "version": "1.0.0",
+  "description": "tercera preentrega de mi proyecto final",
+  "main": "inicio.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxi8613/Entrega2-Bicego.git"
+  },
+  "keywords": [
+    "wine",
+    "flat",
+    "holidays",
+    "winery",
+    "mendoza",
+    "argentina"
+  ],
+  "author": "maximo bicego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxi8613/Entrega2-Bicego/issues"
+  },
+  "homepage": "https://github.com/maxi8613/Entrega2-Bicego#readme"
+}
