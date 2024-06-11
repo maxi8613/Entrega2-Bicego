@@ -28,3 +28,23 @@ footer {
   .insta{
       color: darkred;
   }
+
+  @media (max-width:767px){
+    
+  }
+
+  @media (max-width:1023px){
+    footer{
+        display: flex;
+        flex-direction: column;
+       text-align: center;
+        height: 200px;
+    }
+    
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+  }

@@ -1,14 +1,6 @@
 body {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
-}
-
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60% 40 1fr;
-  grid-template-areas: "fotos fotos" "presentacion presentacion" "presentacion presentacion";
 }
 
 .fotos {
@@ -17,7 +9,6 @@ section {
 
 .carousel-item img {
   max-height: 800px;
-  width: 200px;
 }
 
 .contenedorP {
@@ -25,28 +16,46 @@ section {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-
-.presentacion {
+.contenedorP .presentacion {
   line-height: 30px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 20px;
 }
-
-.presentacion h2 {
+.contenedorP .presentacion h2 {
   font-size: 26px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.presentacion p {
+.contenedorP .presentacion p {
   font-size: 20px;
 }
 
+@media (max-width: 767px) {
+  .contenedorP {
+    margin-top: 2px;
+  }
+  .contenedorP .presentacion h2 {
+    text-align: center;
+  }
+  .contenedorP .presentacion p {
+    font-size: 17px;
+    text-align: justify;
+  }
+  .contenedorP .mapa {
+    height: 300px;
+    width: 550px;
+  }
+}
+@media (max-width: 1023px) {
+  .mapa {
+    height: 250px;
+    width: 600px;
+  }
+}
 nav {
   background-color: azure;
   height: 100px;
 }
-
-.imagen {
+nav .imagen {
   height: 70px;
   padding-left: 20px;
 }
@@ -81,11 +90,31 @@ footer {
   color: darkred;
 }
 
+@media (max-width: 1023px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 200px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.tituloCard {
+  text-align: center;
+}
+
 .cartas {
   min-height: calc(100vh - 100px - 120px);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.presentacionCard {
+  font-size: 17px;
 }
 
 .imgMama {
@@ -100,23 +129,7 @@ footer {
   min-height: calc(100vh - 100px - 120px);
 }
 
-.formContenedor {
-  min-height: calc(100vh - 100px - 120px);
-}
-
 @media (max-width: 768px) {
-  /* Inicio */
-  .contenedorP {
-    margin-top: 2px;
-  }
-  .presentacion p {
-    font-size: 17px;
-  }
-  .mapa {
-    height: 300px;
-    width: 550px;
-  }
-  /* Servicios */
   .servicios {
     display: flex;
     flex-direction: column;
@@ -128,6 +141,9 @@ footer {
     display: flex;
     flex-direction: column;
   }
+}
+.formContenedor {
+  min-height: calc(100vh - 100px - 120px);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,9 +1,19 @@
+
+.tituloCard{
+  text-align: center;
+}
+
 .cartas{
     min-height: calc(100vh - 100px - 120px);
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+ .presentacionCard{
+  font-size: 17px;
+ }
+
     
   .imgMama {
       height: 250px;

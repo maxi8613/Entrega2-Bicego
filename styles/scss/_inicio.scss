@@ -1,17 +1,16 @@
 body {
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
   }
 
-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60% 40 1fr;
-    grid-template-areas: "fotos fotos"
-    "presentacion presentacion"
-    "presentacion presentacion";
-  }
+// section{
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 60% 40 1fr;
+    // grid-template-areas: "fotos fotos"
+    // "presentacion presentacion"
+    // "presentacion presentacion";
+  // }
   
   .fotos{
   grid-area: fotos;
@@ -20,24 +19,58 @@ section{
   
   .carousel-item img {
     max-height: 800px;
-    width: 200px;
+    
   }
   
   .contenedorP{
     grid-area: presentacion;
     margin-top: 30px;
     margin-bottom: 10px;
-  }
-  
-  .presentacion {
-    line-height: 30px;
+
+    .presentacion{
+      line-height: 30px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 20px;
+
+    h2{
+      font-size: 26px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    p{
+      font-size: 20px;
+    }
+    }
   }
-  .presentacion h2{
-    font-size: 26px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+
+  @media (max-width:767px){
+    .contenedorP{
+      margin-top: 2px;
+
+      .presentacion{
+        h2{
+          text-align: center;
+        }
+        p{
+          font-size: 17px;
+          text-align: justify;
+        }
+      }
+
+      .mapa{
+        height: 300px;
+        width: 550px;
+
+      }
   }
-  .presentacion p {
-    font-size: 20px;
+  }
+
+  @media (max-width:1023px){
+.mapa{
+  height: 250px;
+  width: 600px;
+}
   }
