@@ -24,12 +24,17 @@ padding-top: 12px;
       height: 250px;
     } 
 
+
+    .transition-scale{
+      transition: transform 1s ease;
+      &:hover{
+transform: scale(1.1);
+      }
+    }
+
     @media (max-width:767px){
       .tituloCard{
         margin-top: 10px;
-      }
-      .carta{
-        margin-left: 100px;
       }
     }
 
