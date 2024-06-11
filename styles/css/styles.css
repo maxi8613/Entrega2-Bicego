@@ -3,27 +3,22 @@ body {
   width: 100vw;
 }
 
-.fotos {
-  grid-area: fotos;
-}
-
 .carousel-item img {
   max-height: 800px;
 }
 
 .contenedorP {
-  grid-area: presentacion;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 .contenedorP .presentacion {
   line-height: 30px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI";
   padding-top: 20px;
 }
 .contenedorP .presentacion h2 {
   font-size: 26px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI";
 }
 .contenedorP .presentacion p {
   font-size: 20px;
