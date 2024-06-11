@@ -160,6 +160,11 @@ footer {
     flex-direction: column;
   }
 }
+@media (max-width: 767px) {
+  .cartitas {
+    margin-left: 100px;
+  }
+}
 .formContenedor {
   min-height: calc(100vh - 100px - 120px);
 }
