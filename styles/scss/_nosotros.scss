@@ -1,6 +1,7 @@
 
 .tituloCard{
   text-align: center;
+padding-top: 12px;
 }
 
 .cartas{
@@ -22,3 +23,23 @@
     .imgPapa {
       height: 250px;
     } 
+
+    @media (max-width:767px){
+      .tituloCard{
+        margin-top: 10px;
+      }
+      .carta{
+        margin-left: 100px;
+      }
+    }
+
+
+    @media (max-width:1023px){
+      .tituloCard{
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      .carta{
+        margin-left: 20px;
+      }
+    }

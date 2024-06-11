@@ -104,6 +104,7 @@ footer {
 }
 .tituloCard {
   text-align: center;
+  padding-top: 12px;
 }
 
 .cartas {
@@ -125,6 +126,23 @@ footer {
   height: 250px;
 }
 
+@media (max-width: 767px) {
+  .tituloCard {
+    margin-top: 10px;
+  }
+  .carta {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1023px) {
+  .tituloCard {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  .carta {
+    margin-left: 20px;
+  }
+}
 .servicios {
   min-height: calc(100vh - 100px - 120px);
 }
