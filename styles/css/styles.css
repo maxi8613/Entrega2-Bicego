@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .carousel-item img {
@@ -24,7 +25,7 @@ body {
   font-size: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .contenedorP {
     margin-top: 2px;
   }
@@ -40,10 +41,9 @@ body {
     width: 550px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 992px) {
   .mapa {
-    height: 250px;
-    width: 600px;
+    width: 450px;
   }
 }
 nav {
@@ -53,6 +53,15 @@ nav {
 nav .imagen {
   height: 70px;
   padding-left: 20px;
+}
+nav .container-fluid {
+  --bs-gutter-x: 0 ;
+}
+nav .navegacion {
+  background-color: azure;
+  position: relative;
+  z-index: 1;
+  padding-left: 12px;
 }
 
 footer {
@@ -97,51 +106,23 @@ footer {
     flex-direction: column;
   }
 }
-.tituloCard {
-  text-align: center;
-  padding-top: 12px;
-}
-
-.cartas {
-  min-height: calc(100vh - 100px - 120px);
+.contenedorConocenos {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+.contenedorConocenos .texto-intro {
+  font-size: 20px;
 }
 
-.presentacionCard {
-  font-size: 17px;
+.contenedor-mama {
+  display: flex;
 }
 
-.imgMama {
-  height: 250px;
+.texto-papas {
+  font-size: 20px;
 }
 
-.imgPapa {
-  height: 250px;
-}
-
-.transition-scale {
-  transition: transform 1s ease;
-}
-.transition-scale:hover {
-  transform: scale(1.1);
-}
-
-@media (max-width: 767px) {
-  .tituloCard {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 1023px) {
-  .tituloCard {
-    margin-top: 5px;
-    margin-bottom: 20px;
-  }
-  .carta {
-    margin-left: 20px;
-  }
-}
 .servicios {
   min-height: calc(100vh - 100px - 120px);
 }

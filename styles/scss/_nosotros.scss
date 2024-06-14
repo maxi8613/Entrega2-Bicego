@@ -1,50 +1,18 @@
+$font-size: 20px;
+.contenedorConocenos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.tituloCard{
-  text-align: center;
-padding-top: 12px;
+  .texto-intro{
+    font-size: $font-size;
+  }
 }
 
-.cartas{
-    min-height: calc(100vh - 100px - 120px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.contenedor-mama{
+  display: flex;
+}
 
- .presentacionCard{
-  font-size: 17px;
- }
-
-    
-  .imgMama {
-      height: 250px;
-    }
-    
-    .imgPapa {
-      height: 250px;
-    } 
-
-
-    .transition-scale{
-      transition: transform 1s ease;
-      &:hover{
-       transform: scale(1.1);
-      }
-    }
-
-    @media (max-width:767px){
-      .tituloCard{
-        margin-top: 10px;
-      }
-    }
-
-
-    @media (max-width:1023px){
-      .tituloCard{
-        margin-top: 5px;
-        margin-bottom: 20px;
-      }
-      .carta{
-        margin-left: 20px;
-      }
-    }
+.texto-papas{
+  font-size: $font-size;
+}
