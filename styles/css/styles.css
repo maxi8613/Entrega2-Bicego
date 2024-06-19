@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .carousel-item img {
@@ -24,7 +25,7 @@ body {
   font-size: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .contenedorP {
     margin-top: 2px;
   }
@@ -40,10 +41,9 @@ body {
     width: 550px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 992px) {
   .mapa {
-    height: 250px;
-    width: 600px;
+    width: 450px;
   }
 }
 nav {
@@ -53,15 +53,6 @@ nav {
 nav .imagen {
   height: 70px;
   padding-left: 20px;
-}
-nav .container-fluid {
-  --bs-gutter-x: 0 ;
-}
-nav .navegacion {
-  background-color: azure;
-  position: relative;
-  z-index: 1;
-  padding-left: 12px;
 }
 
 footer {
@@ -106,117 +97,49 @@ footer {
     flex-direction: column;
   }
 }
-.contenedorConocenos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contenedorConocenos .texto-intro {
-  font-size: 20px;
-}
-
-.contenedor-mama {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.contenedor-mama .imagenMama {
-  height: 500px;
-}
-
-.texto-papas {
-  font-size: 20px;
-  width: 600px;
-}
-
-.titulo-yo {
+.tituloCard {
   text-align: center;
+  padding-top: 12px;
 }
 
-.contenedor-papa {
+.cartas {
+  min-height: calc(100vh - 100px - 120px);
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-}
-.contenedor-papa .imagenPapa {
-  height: 500px;
-  width: 470px;
-  margin-bottom: 20px;
+  justify-content: center;
 }
 
-@media (max-width: 1094px) {
-  .contenedorConocenos {
-    flex-direction: column;
-  }
-  .contenedorConocenos .titleConocenos {
-    text-align: center;
-  }
-  .contenedorConocenos .texto-intro {
-    font-size: 20px;
-    text-align: justify;
-    width: 500px;
-  }
-  .contenedorConocenos .globo {
-    height: 200px;
-  }
-  .contenedor-mama {
-    flex-direction: column-reverse;
-  }
-  .contenedor-mama .imagenMama {
-    height: 400px;
-  }
-  .texto-papas {
-    font-size: 19px;
-    width: 500px;
-  }
-  .titulo-yo {
-    margin-top: 9px;
-  }
-  .contenedor-papa {
-    flex-direction: column;
-  }
-  .contenedor-papa .imagenPapa {
-    height: 330px;
-    width: 350px;
+.presentacionCard {
+  font-size: 17px;
+}
+
+.imgMama {
+  height: 250px;
+}
+
+.imgPapa {
+  height: 250px;
+}
+
+.transition-scale {
+  transition: transform 1s ease;
+}
+.transition-scale:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .tituloCard {
+    margin-top: 10px;
   }
 }
-@media (max-width: 576px) {
-  .contenedorConocenos {
-    flex-direction: column;
+@media (max-width: 1023px) {
+  .tituloCard {
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
-  .contenedorConocenos .introduccion {
-    margin-left: 12px;
-  }
-  .contenedorConocenos .titleConocenos {
-    text-align: center;
-  }
-  .contenedorConocenos .texto-intro {
-    font-size: 18px;
-    text-align: justify;
-    width: 500px;
-  }
-  .contenedorConocenos .globo {
-    height: 200px;
-  }
-  .contenedor-mama {
-    flex-direction: column-reverse;
-  }
-  .contenedor-mama .imagenMama {
-    height: 370px;
-  }
-  .texto-papas {
-    font-size: 18px;
-    width: 500px;
-  }
-  .titulo-yo {
-    margin-top: 9px;
-  }
-  .contenedor-papa {
-    flex-direction: column;
-  }
-  .contenedor-papa .imagenPapa {
-    height: 300px;
-    width: 350px;
+  .carta {
+    margin-left: 20px;
   }
 }
 .servicios {
@@ -236,13 +159,6 @@ footer {
     flex-direction: column;
   }
 }
-.transition-scale {
-  transition: transform 1s ease;
-}
-.transition-scale:hover {
-  transform: scale(1.1);
-}
-
 @media (max-width: 767px) {
   .cartitas {
     margin-left: 100px;

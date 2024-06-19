@@ -5,4 +5,14 @@ nav {
       height: 70px;
       padding-left: 20px;
     }
+
+    .container-fluid{
+      --bs-gutter-x: 0
+    }
+    .navegacion{
+      background-color: azure;
+      position: relative;
+      z-index: 1;
+      padding-left: 12px;
+    }
   }
