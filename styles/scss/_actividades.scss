@@ -5,9 +5,15 @@
     }
   }
 
+  .cartitas{
+    margin-left: auto;
+    margin-right: auto;
+    height: 390px;
+  }
 
-@media (max-width:767px){
+@media (max-width:767px) and (min-width:360px){
     .cartitas{
-        margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
     }
 }

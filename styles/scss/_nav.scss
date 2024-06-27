@@ -1,9 +1,14 @@
 nav {
     background-color: azure;
     height: 100px;
+    width: 100vw;
     .imagen{
       height: 70px;
       padding-left: 20px;
+    }
+
+    .hamburguesa{
+      width: 20px;
     }
 
     .container-fluid{
