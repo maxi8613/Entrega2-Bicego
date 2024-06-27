@@ -7,6 +7,9 @@ $font: 'Segoe UI';
 body {
 @include height-width;
   }
+html {
+  overflow-x: hidden;
+}
 
   .carousel-item img {
     max-height: 800px;
